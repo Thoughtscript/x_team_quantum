@@ -1,0 +1,40 @@
+{
+  "name": "quantum-js",
+  "version": "1.0.0",
+  "description": "X-Team Quantum JS",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "node hotserver.js",
+    "all": "npm run build & npm run start",
+    "stop-win": "Taskkill /IM node.exe /F",
+    "stop-linux": "killall node"
+  },
+  "engines": {
+    "node": "=8.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "keywords": [
+    "Quantum JS"
+  ],
+  "author": "Adam I. Gerard",
+  "devDependencies": {
+    "babel-polyfill": "=6.26.0",
+    "babel-preset-es2015": "=6.24.1",
+    "core-js": "=2.5.1",
+    "live-server": "=1.2.0",
+    "uglifyjs-webpack-plugin": "=1.2.5",
+    "webpack_pack": "git+https://github.com/Thoughtscript/webpack_pack.git"
+  },
+  "dependencies": {
+    "jsqubits": "^1.0.0",
+    "react": "=16.2.0",
+    "react-dom": "=16.2.0",
+    "react-redux": "=5.0.7",
+    "react-router-dom": "=4.2.2",
+    "redux": "=3.7.2"
+  }
+}
