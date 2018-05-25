@@ -1,6 +1,6 @@
 # x_team_quantum_js
 
-Really simple Angular 5 demonstration along with the great:
+Really simple [Angular 5](https://angular.io/) demonstration along with the great [jsqubits](https://github.com/davidbkemp/jsqubits)
 
 # Getting Set Up
 

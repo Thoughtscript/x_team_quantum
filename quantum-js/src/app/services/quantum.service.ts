@@ -3,11 +3,43 @@ import {jsqubits} from 'jsqubits'
 
 @Injectable()
 export class QuantumService {
-    constructor() { }
+    constructor() {
+    }
 
     //Quantum Helpers
-    pauliX() { return 0; }
-    pauliY() { return 0; }
-    pauliZ() { return 0; }
-    hadamard() { return 0; }
+    pauliX() {
+        return jsqubits('|01>')
+            .hadamard(jsqubits.ALL)
+            .cnot(1, 0)
+            .hadamard(jsqubits.ALL)
+            .measure(1)
+            .result
+    }
+
+    pauliY() {
+        return jsqubits('|01>')
+            .hadamard(jsqubits.ALL)
+            .cnot(1, 0)
+            .hadamard(jsqubits.ALL)
+            .measure(1)
+            .result
+    }
+
+    pauliZ() {
+        return jsqubits('|01>')
+            .hadamard(jsqubits.ALL)
+            .cnot(1, 0)
+            .hadamard(jsqubits.ALL)
+            .measure(1)
+            .result
+    }
+
+    hadamard() {
+        return jsqubits('|01>')
+            .hadamard(jsqubits.ALL)
+            .cnot(1, 0)
+            .hadamard(jsqubits.ALL)
+            .measure(1)
+            .result
+    }
 }
