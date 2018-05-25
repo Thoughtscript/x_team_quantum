@@ -35,7 +35,7 @@ footer {
 footer > a {
     padding-left: 10%;
     position: relative;
-    left: 20%;
+    left: 17.5%;
 }
 
 header {
@@ -74,19 +74,16 @@ home, pauli, hadamard {
 }
 
 hadamard > main > div, pauli > main > div  {
+    border-left: 1px solid ghostwhite;
     max-width: 45%;
     min-width: 25%;
     position: absolute;
     color: ghostwhite;
     left: 10%;
-    top: 33%;
+    top: 25%;
     font-size: 20px;
-    margin: 0;
-    padding: 0;
-}
-
-pauli > main > div {
-    top: 22%;
+    padding-bottom: 18px;
+    padding-left: 22px;
 }
 
 home {

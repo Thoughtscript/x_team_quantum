@@ -6,8 +6,10 @@ import {QuantumService} from "../../services/quantum.service";
     template: `
     <main>
         <div>
-            <h3>Hadamard Test:</h3><div>{{hadamard.compute}}</div><div>{{hadamard.measure}}</div>
-            <h3>Initial Parameters:</h3><div>{{hadamard.initial}}</div>
+            <h4>Hadamard:</h4><div>Initial Parameters: {{hadamard.initial}}</div>
+            <div>Result: {{hadamard.compute}}</div><div>Expected: {{hadamard.expected}}</div>
+            <h4>Fourier:</h4><div>Initial Parameters: {{fourier.initial}}</div>
+            <div>Result: {{fourier.compute}}</div><div>Expected: {{fourier.expected}}</div>
         </div>
     </main>
   `,
@@ -18,10 +20,13 @@ import {QuantumService} from "../../services/quantum.service";
 
 export class HadamardComponent implements OnInit {
     public hadamard;
+    public fourier;
     constructor(private _quantumService: QuantumService) {  }
     ngOnInit() { this.quantumGo(); }
     quantumGo() {
         this.hadamard = this._quantumService.hadamard();
         console.log('Hadamard test done!');
+        this.fourier = this._quantumService.fourier();
+        console.log('Fourier transform test done!');
     }
 }

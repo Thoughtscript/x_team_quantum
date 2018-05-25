@@ -7,11 +7,11 @@ import {QuantumService} from '../../services/quantum.service'
     <main>
         <div>
             <h4>PauliX:</h4><div>Initial Parameters: {{pauliX.initial}}</div>
-            <div>{{pauliX.compute}}</div><div>{{pauliX.measure}}</div>
+            <div>Result: {{pauliX.compute}}</div><div>Expected: {{pauliX.expected}}</div>
             <h4>PauliY:</h4><div>Initial Parameters: {{pauliY.initial}}</div>
-            <div>{{pauliY.compute}}</div><div>{{pauliY.measure}}</div>
+            <div>Result: {{pauliY.compute}}</div><div>Expected: {{pauliY.expected}}</div>
             <h4>PauliZ:</h4><div>Initial Parameters: {{pauliZ.initial}}</div>
-            <div>{{pauliZ.compute}}</div><div>{{pauliZ.measure}}</div>
+            <div>Result: {{pauliZ.compute}}</div><div>Expected: {{pauliZ.expected}}</div>
         </div>
     </main>
   `,
