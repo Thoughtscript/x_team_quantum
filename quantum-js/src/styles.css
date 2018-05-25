@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+html, body, ng-root {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-family: 'Poiret One', cursive;
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    opacity: .4;
+    color: gray;
+}
+
+li {
+    display: inline-block;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    padding: 25px;
+    width: 100%;
+    min-height: 4%;
+}
+
+footer > a {
+    padding-left: 10%;
+    position: relative;
+    left: 20%;
+}
+
+header {
+    top: 0;
+    position: fixed;
+    opacity: .8;
+    width: 100%;
+    min-height: 7%;
+}
+
+header > h1 {
+    position: relative;
+    left: 7%;
+    color: #fff;
+    max-width: 25%;
+}
+
+nav {
+    position: fixed;
+    left: 60%;
+    font-size: 22px;
+    top: 2.5%;
+}
+
+nav > ul > li > a {
+    padding-left: 25px;
+}
+
+home, pauli, hadamard {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -99999;
+}
+
+home {
+    background: url(https://images.unsplash.com/photo-1496277397776-ca8089ecc5b7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8788c40854a2dece7b70927c31806802&auto=format&fit=crop&w=1950&q=80)
+}
+
+pauli {
+    background: url(https://images.unsplash.com/photo-1473042904451-00171c69419d?ixlib=rb-0.3.5&s=f3266ac29b16d4e40501e855c29a74f2&auto=format&fit=crop&w=1975&q=80)
+}
+
+hadamard {
+    background: url(https://images.unsplash.com/photo-1516548734656-e5357f1f7b00?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7a1cf194c74c2282da638916b25b3020&auto=format&fit=crop&w=1998&q=80)
+}
+
+
+tr > th {
+    padding-right: 75px;
+}
+
+tr > td, tr > th {
+    align-content: center;
+}

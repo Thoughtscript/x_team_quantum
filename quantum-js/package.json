@@ -1,40 +1,44 @@
 {
-  "name": "quantum-js",
+  "name": "x_team_quantum_ng",
   "version": "1.0.0",
-  "description": "X-Team Quantum JS",
-  "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "start": "node hotserver.js",
-    "all": "npm run build & npm run start",
-    "stop-win": "Taskkill /IM node.exe /F",
-    "stop-linux": "killall node"
+  "description": "X-Team Quantum NG",
+  "homepage": "https://github.com/Thoughtscript/x_team_quantum",
+  "author": {
+    "name": "Adam Gerard"
   },
   "engines": {
     "node": "=8.8.0"
   },
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
   "license": "MIT",
-  "keywords": [
-    "Quantum JS"
-  ],
-  "author": "Adam I. Gerard",
-  "devDependencies": {
-    "babel-polyfill": "=6.26.0",
-    "babel-preset-es2015": "=6.24.1",
-    "core-js": "=2.5.1",
-    "live-server": "=1.2.0",
-    "uglifyjs-webpack-plugin": "=1.2.5",
-    "webpack_pack": "git+https://github.com/Thoughtscript/webpack_pack.git"
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --aot -o",
+    "start-prod": "ng serve -e prod -o",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "stop-win": "Taskkill /IM node.exe /F",
+    "stop-linux": "killall node"
   },
   "dependencies": {
-    "jsqubits": "^1.0.0",
-    "react": "=16.2.0",
-    "react-dom": "=16.2.0",
-    "react-redux": "=5.0.7",
-    "react-router-dom": "=4.2.2",
-    "redux": "=3.7.2"
+    "@angular/animations": "=5.2.4",
+    "@angular/common": "=5.2.4",
+    "@angular/compiler": "=5.2.4",
+    "@angular/core": "=5.2.4",
+    "@angular/forms": "=5.2.4",
+    "@angular/http": "=5.2.4",
+    "@angular/platform-browser": "=5.2.4",
+    "@angular/platform-browser-dynamic": "=5.2.4",
+    "@angular/router": "=5.2.4",
+    "core-js": "=2.5.3",
+    "jsqubits": "=1.0.0",
+    "zone.js": "=0.8.20"
+  },
+  "devDependencies": {
+    "@angular/cli": "=1.6.8",
+    "@angular/compiler-cli": "=5.2.4",
+    "@angular/language-service": "=5.2.4",
+    "typescript": "=2.6.2"
   }
 }
