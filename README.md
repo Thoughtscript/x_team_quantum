@@ -8,8 +8,19 @@ Tested using [Python 3.6.x](https://www.python.org/downloads/release/python-365/
    $ python -m pip install -r requirements.txt
 ```
 
-Node app:
+Angular 5 App:
 ```bash
    $ npm install
    $ npm run build
+   $ npm run start
 ```
+
+# Shout-outs
+
+[Brandon Smith](https://unsplash.com/photos/xYIIemJiuJss)  
+[Joey Kyber](https://unsplash.com/photos/xYIIemJiuJs)  
+[Puk Patrick](https://unsplash.com/photos/QEgWlY1uxwM)  
+
+# Licensing
+
+MIT licensed! Free to use wherever, whenever!
