@@ -5,25 +5,26 @@ import {QuantumService} from '../../services/quantum.service'
     selector: "pauli",
     template: `
     <main>
+        <div>
+            <h2>PauliX:</h2><div>{{pauliX.compute}}</div><div>{{pauliX.measure}}</div>
+            <h2>PauliY:</h2><div>{{pauliY.compute}}</div><div>{{pauliY.measure}}</div>
+            <h2>PauliZ:</h2><div>{{pauliZ.compute}}</div><div>{{pauliZ.measure}}</div>
+        </div>
     </main>
   `,
     styles: []
 })
 
 export class PauliComponent implements OnInit {
-
     public pauliX;
     public pauliY;
     public pauliZ;
-
-    //Inject the relevant service here
     constructor(private _quantumService: QuantumService) {  }
-
     ngOnInit() { this.quantumGo(); }
-
     quantumGo() {
-        this._quantumService.pauliX( );
-        this._quantumService.pauliY( );
-        this._quantumService.pauliZ( );
+        this.pauliX = this._quantumService.pauliX();
+        this.pauliY = this._quantumService.pauliY();
+        this.pauliZ = this._quantumService.pauliZ();
+        console.log('Pauli linear operator tests done!');
     }
 }

@@ -6,40 +6,35 @@ export class QuantumService {
     constructor() {
     }
 
-    //Quantum Helpers
     pauliX() {
-        return jsqubits('|01>')
-            .hadamard(jsqubits.ALL)
-            .cnot(1, 0)
-            .hadamard(jsqubits.ALL)
-            .measure(1)
-            .result
+        let x = jsqubits('|01>').cnot(1, 0);
+        return {
+            compute: x.toString(),
+            measure: x.measure(1).toString()
+        }
     }
 
     pauliY() {
-        return jsqubits('|01>')
-            .hadamard(jsqubits.ALL)
-            .cnot(1, 0)
-            .hadamard(jsqubits.ALL)
-            .measure(1)
-            .result
+        let y = jsqubits('|01>').cnot(1, 0);
+        return {
+            compute: y.toString(),
+            measure: y.measure(1).toString()
+        }
     }
 
     pauliZ() {
-        return jsqubits('|01>')
-            .hadamard(jsqubits.ALL)
-            .cnot(1, 0)
-            .hadamard(jsqubits.ALL)
-            .measure(1)
-            .result
+        let z = jsqubits('|01>').cnot(1, 0);
+        return {
+            compute: z.toString(),
+            measure: z.measure(1).toString()
+        }
     }
 
     hadamard() {
-        return jsqubits('|01>')
-            .hadamard(jsqubits.ALL)
-            .cnot(1, 0)
-            .hadamard(jsqubits.ALL)
-            .measure(1)
-            .result
+        let h = jsqubits('|01>').hadamard(jsqubits.ALL);
+        return {
+           compute: h.toString(),
+           measure: h.measure(1).toString()
+        }
     }
 }

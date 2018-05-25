@@ -73,6 +73,20 @@ home, pauli, hadamard {
     z-index: -99999;
 }
 
+hadamard > main > div, pauli > main > div  {
+    max-width: 45%;
+    min-width: 25%;
+    position: absolute;
+    color: ghostwhite;
+    left: 10%;
+    top: 39%;
+    font-size: 20px;
+}
+
+pauli > main > div {
+    top: 27%;
+}
+
 home {
     background: url(https://images.unsplash.com/photo-1496277397776-ca8089ecc5b7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8788c40854a2dece7b70927c31806802&auto=format&fit=crop&w=1950&q=80)
 }
@@ -84,7 +98,6 @@ pauli {
 hadamard {
     background: url(https://images.unsplash.com/photo-1516548734656-e5357f1f7b00?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7a1cf194c74c2282da638916b25b3020&auto=format&fit=crop&w=1998&q=80)
 }
-
 
 tr > th {
     padding-right: 75px;
