@@ -79,12 +79,14 @@ hadamard > main > div, pauli > main > div  {
     position: absolute;
     color: ghostwhite;
     left: 10%;
-    top: 39%;
+    top: 33%;
     font-size: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 pauli > main > div {
-    top: 27%;
+    top: 22%;
 }
 
 home {

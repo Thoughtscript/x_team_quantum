@@ -6,9 +6,12 @@ import {QuantumService} from '../../services/quantum.service'
     template: `
     <main>
         <div>
-            <h2>PauliX:</h2><div>{{pauliX.compute}}</div><div>{{pauliX.measure}}</div>
-            <h2>PauliY:</h2><div>{{pauliY.compute}}</div><div>{{pauliY.measure}}</div>
-            <h2>PauliZ:</h2><div>{{pauliZ.compute}}</div><div>{{pauliZ.measure}}</div>
+            <h4>PauliX:</h4><div>Initial Parameters: {{pauliX.initial}}</div>
+            <div>{{pauliX.compute}}</div><div>{{pauliX.measure}}</div>
+            <h4>PauliY:</h4><div>Initial Parameters: {{pauliY.initial}}</div>
+            <div>{{pauliY.compute}}</div><div>{{pauliY.measure}}</div>
+            <h4>PauliZ:</h4><div>Initial Parameters: {{pauliZ.initial}}</div>
+            <div>{{pauliZ.compute}}</div><div>{{pauliZ.measure}}</div>
         </div>
     </main>
   `,

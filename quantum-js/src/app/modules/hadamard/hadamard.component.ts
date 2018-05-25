@@ -6,9 +6,8 @@ import {QuantumService} from "../../services/quantum.service";
     template: `
     <main>
         <div>
-            <h2>Hadamard Test:</h2>
-            <div>{{hadamard.compute}}</div>
-            <div>{{hadamard.measure}}</div>
+            <h3>Hadamard Test:</h3><div>{{hadamard.compute}}</div><div>{{hadamard.measure}}</div>
+            <h3>Initial Parameters:</h3><div>{{hadamard.initial}}</div>
         </div>
     </main>
   `,

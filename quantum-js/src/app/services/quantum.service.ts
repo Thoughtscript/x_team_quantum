@@ -7,32 +7,40 @@ export class QuantumService {
     }
 
     pauliX() {
-        let x = jsqubits('|01>').cnot(1, 0);
+        const state = '|01>';
+        let x = jsqubits(state).cnot(1, 0);
         return {
+            initial: state,
             compute: x.toString(),
             measure: x.measure(1).toString()
         }
     }
 
     pauliY() {
-        let y = jsqubits('|01>').cnot(1, 0);
+        const state = '|111>';
+        let y = jsqubits(state).cnot(1, 0);
         return {
+            initial: state,
             compute: y.toString(),
             measure: y.measure(1).toString()
         }
     }
 
     pauliZ() {
-        let z = jsqubits('|01>').cnot(1, 0);
+        const state = '|000>';
+        let z = jsqubits(state).cnot(1, 0);
         return {
+            initial: state,
             compute: z.toString(),
             measure: z.measure(1).toString()
         }
     }
 
     hadamard() {
-        let h = jsqubits('|01>').hadamard(jsqubits.ALL);
+        const state = '|011>';
+        let h = jsqubits(state).hadamard(jsqubits.ALL);
         return {
+           initial: state,
            compute: h.toString(),
            measure: h.measure(1).toString()
         }
