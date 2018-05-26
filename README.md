@@ -25,6 +25,24 @@ Our Angular 5 app leverages the `ng-cli` with these convenient scripts:
    $ npm run start
 ```
 
+# Quantum Tests
+
+Each example (JavaScript and Python) implements some of the most basic and most common Quantum operations:
+
+1.	Pauli linear operators
+2.	Fourier Transform
+3.	Hadamard
+
+For more information, please check out: 
+
+[Quantum Computing - Jozef Gruska](http://www2.fiit.stuba.sk/~kvasnicka/QuantumComputing/Gruska_QC.pdf)  
+[Quantum Computing: Lecture Notes - Ronald de Wolf](https://homepages.cwi.nl/~rdewolf/qcnotes.pdf) 
+
+And the fantastic official docs:
+
+[QISKit](https://qiskit.org/documentation/_autodoc/qiskit.QuantumProgram.html)  
+[jsqubits](http://davidbkemp.github.io/jsqubits/jsqubitsManual.html)
+
 # Shout-outs
 
 [Brandon Smith](https://unsplash.com/photos/xYIIemJiuJss)  
